@@ -1,0 +1,10 @@
+Cmp-Mod V01 Created by CvPcb (2013-07-07 BZR 4022)-stable date = 30.10.2014 15:40:34
+
+BeginCmp
+TimeStamp = /545221CE;
+Reference = P1;
+ValeurCmp = CONN_5;
+IdModule  = PIN_ARRAY_5x1;
+EndCmp
+
+EndListe
