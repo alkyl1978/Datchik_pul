@@ -56,7 +56,7 @@ F 3 "" H 650 1100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Bus Line
-	1500 750  1500 1600
+	1500 750  1500 3300
 Entry Wire Line
 	1400 1300 1500 1400
 Entry Wire Line
@@ -110,4 +110,85 @@ Text Label 1650 950  0    60   ~ 0
 VCC
 Text Label 1650 1350 3    60   ~ 0
 GND
+$Comp
+L CRYSTAL X1
+U 1 1 5452290C
+P 750 2400
+F 0 "X1" H 750 2550 60  0000 C CNN
+F 1 "CRYSTAL" H 750 2250 60  0000 C CNN
+F 2 "~" H 750 2400 60  0000 C CNN
+F 3 "~" H 750 2400 60  0000 C CNN
+	1    750  2400
+	0    -1   -1   0   
+$EndComp
+$Comp
+L C C2
+U 1 1 54522929
+P 750 1800
+F 0 "C2" H 750 1900 40  0000 L CNN
+F 1 "C" H 756 1715 40  0000 L CNN
+F 2 "~" H 788 1650 30  0000 C CNN
+F 3 "~" H 750 1800 60  0000 C CNN
+	1    750  1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C3
+U 1 1 54522938
+P 750 3050
+F 0 "C3" H 750 3150 40  0000 L CNN
+F 1 "C" H 756 2965 40  0000 L CNN
+F 2 "~" H 788 2900 30  0000 C CNN
+F 3 "~" H 750 3050 60  0000 C CNN
+	1    750  3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	750  2000 750  2100
+Wire Wire Line
+	750  2700 750  2850
+Entry Wire Line
+	1400 2050 1500 2150
+Entry Wire Line
+	1400 2800 1500 2900
+Wire Wire Line
+	1400 2050 750  2050
+Connection ~ 750  2050
+Wire Wire Line
+	750  2800 1400 2800
+Connection ~ 750  2800
+$Comp
+L GND #PWR1
+U 1 1 54522992
+P 1000 1600
+F 0 "#PWR1" H 1000 1600 30  0001 C CNN
+F 1 "GND" H 1000 1530 30  0001 C CNN
+F 2 "" H 1000 1600 60  0000 C CNN
+F 3 "" H 1000 1600 60  0000 C CNN
+	1    1000 1600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L GND #PWR2
+U 1 1 545229A1
+P 1000 3250
+F 0 "#PWR2" H 1000 3250 30  0001 C CNN
+F 1 "GND" H 1000 3180 30  0001 C CNN
+F 2 "" H 1000 3250 60  0000 C CNN
+F 3 "" H 1000 3250 60  0000 C CNN
+	1    1000 3250
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1000 1600 750  1600
+Wire Wire Line
+	1000 3250 750  3250
+Text Label 800  1600 0    60   ~ 0
+GND
+Text Label 800  3250 0    60   ~ 0
+GND
+Text Label 1000 2050 0    60   ~ 0
+XTL1
+Text Label 1000 2800 0    60   ~ 0
+XTL2
 $EndSCHEMATC
