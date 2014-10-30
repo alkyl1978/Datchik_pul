@@ -191,4 +191,50 @@ Text Label 1000 2050 0    60   ~ 0
 XTL1
 Text Label 1000 2800 0    60   ~ 0
 XTL2
+$Comp
+L C C4
+U 1 1 54522B0A
+P 1700 1850
+F 0 "C4" H 1700 1950 40  0000 L CNN
+F 1 "C" H 1706 1765 40  0000 L CNN
+F 2 "~" H 1738 1700 30  0000 C CNN
+F 3 "~" H 1700 1850 60  0000 C CNN
+	1    1700 1850
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C5
+U 1 1 54522B19
+P 1700 2550
+F 0 "C5" H 1700 2650 40  0000 L CNN
+F 1 "C" H 1706 2465 40  0000 L CNN
+F 2 "~" H 1738 2400 30  0000 C CNN
+F 3 "~" H 1700 2550 60  0000 C CNN
+	1    1700 2550
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	1500 1550 1600 1650
+Entry Wire Line
+	1500 1950 1600 2050
+Entry Wire Line
+	1500 2250 1600 2350
+Entry Wire Line
+	1500 2650 1600 2750
+Wire Wire Line
+	1600 1650 1700 1650
+Wire Wire Line
+	1600 2050 1700 2050
+Wire Wire Line
+	1600 2350 1700 2350
+Wire Wire Line
+	1600 2750 1700 2750
+Text Label 1600 1650 0    60   ~ 0
+VCC
+Text Label 1650 2050 0    60   ~ 0
+GND
+Text Label 1650 2350 0    60   ~ 0
+VCC
+Text Label 1650 2750 0    60   ~ 0
+GND
 $EndSCHEMATC
