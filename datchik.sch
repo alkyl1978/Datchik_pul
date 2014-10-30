@@ -56,7 +56,7 @@ F 3 "" H 650 1100 60  0000 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Bus Line
-	1500 750  1500 3300
+	1500 750  1500 3600
 Entry Wire Line
 	1400 1300 1500 1400
 Entry Wire Line
@@ -237,4 +237,121 @@ Text Label 1650 2350 0    60   ~ 0
 VCC
 Text Label 1650 2750 0    60   ~ 0
 GND
+$Comp
+L CONN_5X2 P2
+U 1 1 54522D68
+P 1550 4100
+F 0 "P2" H 1550 4400 60  0000 C CNN
+F 1 "CONN_5X2" V 1550 4100 50  0000 C CNN
+F 2 "" H 1550 4100 60  0000 C CNN
+F 3 "" H 1550 4100 60  0000 C CNN
+	1    1550 4100
+	1    0    0    -1  
+$EndComp
+Wire Bus Line
+	1500 3600 2500 3600
+Wire Bus Line
+	2500 3600 2500 4650
+Wire Bus Line
+	2500 4650 650  4650
+Wire Bus Line
+	650  3650 650  5850
+Entry Wire Line
+	650  3800 750  3900
+Entry Wire Line
+	650  3900 750  4000
+Entry Wire Line
+	650  4000 750  4100
+Entry Wire Line
+	650  4200 750  4300
+Entry Wire Line
+	650  4100 750  4200
+Wire Wire Line
+	750  3900 1150 3900
+Wire Wire Line
+	750  4000 1150 4000
+Wire Wire Line
+	750  4100 1150 4100
+Wire Wire Line
+	750  4200 1150 4200
+Wire Wire Line
+	750  4300 1150 4300
+Entry Wire Line
+	2400 3900 2500 4000
+Entry Wire Line
+	2400 4000 2500 4100
+Entry Wire Line
+	2400 4100 2500 4200
+Entry Wire Line
+	2400 4200 2500 4300
+Entry Wire Line
+	2400 4300 2500 4400
+Wire Wire Line
+	2400 3900 1950 3900
+Wire Wire Line
+	2400 4000 1950 4000
+Wire Wire Line
+	2400 4100 1950 4100
+Wire Wire Line
+	2400 4200 1950 4200
+Wire Wire Line
+	2400 4300 1950 4300
+Text Label 800  3900 0    60   ~ 0
+USB_DP
+Text Label 800  4000 0    60   ~ 0
+USB_DM
+Text Label 800  4100 0    60   ~ 0
+GND
+Text Label 800  4200 0    60   ~ 0
+VCC_USB
+$Comp
+L LED D1
+U 1 1 54522FA6
+P 900 5000
+F 0 "D1" H 900 5100 50  0000 C CNN
+F 1 "LED" H 900 4900 50  0000 C CNN
+F 2 "~" H 900 5000 60  0000 C CNN
+F 3 "~" H 900 5000 60  0000 C CNN
+	1    900  5000
+	0    -1   -1   0   
+$EndComp
+$Comp
+L OPTO_NPN Q1
+U 1 1 54522FB5
+P 1300 5000
+F 0 "Q1" H 1450 5050 50  0000 L CNN
+F 1 "OPTO_NPN" H 1450 4900 50  0000 L CNN
+F 2 "~" H 1300 5000 60  0000 C CNN
+F 3 "~" H 1300 5000 60  0000 C CNN
+	1    1300 5000
+	1    0    0    -1  
+$EndComp
+Entry Wire Line
+	650  5100 750  5200
+Entry Wire Line
+	650  4700 750  4800
+Wire Wire Line
+	900  5200 750  5200
+Wire Wire Line
+	900  4800 750  4800
+Entry Wire Line
+	650  5200 750  5300
+Entry Wire Line
+	1000 4650 1100 4750
+Wire Wire Line
+	750  5300 1400 5300
+Wire Wire Line
+	1400 5300 1400 5200
+Wire Wire Line
+	1100 4750 1400 4750
+Wire Wire Line
+	1400 4750 1400 4800
+Wire Notes Line
+	1500 4750 750  4750
+Wire Notes Line
+	750  4750 750  5350
+Wire Notes Line
+	750  5350 1500 5350
+Wire Notes Line
+	1500 5350 1500 4750
 $EndSCHEMATC
